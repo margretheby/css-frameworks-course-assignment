@@ -9,22 +9,14 @@ h1, h2, h3, h4, nav {
   background-color: #697463;
   border: 2px solid #697463;
 }
-
-.btn-primary:hover, .btn-primary:active, .btn-primary:disabled, .btn-primary:focus {
+.btn-primary:hover, .btn-primary:active, .btn-primary:focus, .btn-primary:disabled {
   background-color: #cddec5;
   border: 2px solid #cddec5;
   color: #697463;
 }
 
-footer {
+footer, header {
   background-color: #cddec5;
-}
-
-.profile-pic {
-  max-height: 400px;
-}
-.profile-pic-thumbnail {
-  max-height: 30px;
 }
 
 /*# sourceMappingURL=css.map */

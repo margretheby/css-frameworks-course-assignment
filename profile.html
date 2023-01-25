@@ -9,10 +9,10 @@
     <script src="https://kit.fontawesome.com/14580da1e1.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <header>
+    <header class="col-12 position-fixed top-0">
         <nav class="navbar navbar-expand-md">
             <div class="container">
-                <a href="index.html" class="navbar-brand">HomeInspo</a>
+                <a href="index.html" class="navbar-brand"><i class="fa-solid fa-hand-holding-heart me-2"></i>HomeInspo</a>
                 <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#nav">
                     <span><i class="fa-solid fa-bars"></i></span>
                 </button>
@@ -33,15 +33,30 @@
         </nav>
     </header>
     <main>
-        <div class="container">
-            <div class="row">
+        <div class="container pt-5">
+            <div class="row pt-4">
                 <div class="col-6">
-                    <button class="btn btn-primary">New post +</button>
+                    <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#new-post" aria-expanded="false" aria-controls="new-post">New post +</button>
+                    <div class="collapse" id="new-post">
+                        <div class="container">
+                            <div class="row d-flex justify-content-end">
+                                <div class="col-9">
+                                    <form class="mb-5">
+                                        <label for="upload-image" class="mt-3">Choose your image</label>
+                                        <input type="file" name="upload-image" id="upload-image" class="form-control">
+                                        <label for="caption" class="mt-3">Caption</label>
+                                        <textarea name="caption" id="caption" rows="3" class="form-control"></textarea>
+                                        <button class="btn btn-primary mt-3">Upload image</button>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
                 <div class="col-6 d-flex justify-content-end">
-                    <form>
-                        <input type="text" id="search" name="search" placeholder="Search">
-                        <label for="search"><button class="btn"><i class="fa-solid fa-magnifying-glass"></button></i></label>
+                    <form class="d-flex align-items-center">
+                        <input type="text" id="search" name="search" placeholder="Search" class="form-control me-2">
+                        <label for="search"><button class="btn btn-primary"><i class="fa-solid fa-magnifying-glass"></button></i></label>
                     </form>
                 </div>
             </div>
@@ -49,7 +64,7 @@
         <div class="container mt-5">
             <div class="row">
                 <div class="col-3">
-                    <img src="images/gillian.jpg" alt="Profile picture of gillian_johnson" class="img-fluid">
+                    <img src="images/gillian.jpg" alt="Profile picture of gillian_johnson" class="img-fluid rounded">
                 </div>
                 <div class="col-6">
                     <div>
@@ -68,23 +83,25 @@
                         <h3>Friends</h3>
                     </div>
                     <div>
-                        <img src="images/peter.jpg" alt="Username: peter_plant" class="profile-pic-thumbnail m-1">
-                        <img src="images/peter.jpg" alt="Username: peter_plant" class="profile-pic-thumbnail m-1">
-                        <img src="images/peter.jpg" alt="Username: peter_plant" class="profile-pic-thumbnail m-1">
-                        <img src="images/peter.jpg" alt="Username: peter_plant" class="profile-pic-thumbnail m-1">
-                        <img src="images/peter.jpg" alt="Username: peter_plant" class="profile-pic-thumbnail m-1">
-                        <img src="images/peter.jpg" alt="Username: peter_plant" class="profile-pic-thumbnail m-1">
-                        <img src="images/peter.jpg" alt="Username: peter_plant" class="profile-pic-thumbnail m-1">
-                        <img src="images/peter.jpg" alt="Username: peter_plant" class="profile-pic-thumbnail m-1">
-                        <img src="images/peter.jpg" alt="Username: peter_plant" class="profile-pic-thumbnail m-1">
-                        <img src="images/peter.jpg" alt="Username: peter_plant" class="profile-pic-thumbnail m-1">
-                        <img src="images/peter.jpg" alt="Username: peter_plant" class="profile-pic-thumbnail m-1">
+                        <img src="images/peter.jpg" alt="Username: peter_plant" class="w-25 m-1 rounded">
+                        <img src="images/peter.jpg" alt="Username: peter_plant" class="w-25 m-1 rounded">
+                        <img src="images/peter.jpg" alt="Username: peter_plant" class="w-25 m-1 rounded">
+                        <img src="images/peter.jpg" alt="Username: peter_plant" class="w-25 m-1 rounded">
+                        <img src="images/peter.jpg" alt="Username: peter_plant" class="w-25 m-1 rounded">
+                        <img src="images/peter.jpg" alt="Username: peter_plant" class="w-25 m-1 rounded">
+                        <button class="btn btn-primary m-1">View all</button>
                     </div>
                 </div>
             </div>
-            <div class="row mt-5">
-                <div class="col-3"></div>
-                <div class="col-6">
+            <div class="row mt-5 d-flex justify-content-center">
+                <div class="col-xl-3">
+                    <form class=" d-flex flex-column align-items-center">
+                        <label for="caption" class="mt-3">Write on gillian_johnson's wall</label>
+                        <textarea name="caption" id="caption" rows="4" class="form-control"></textarea>
+                        <button class="btn btn-primary mt-3 w-25">Post</button>
+                    </form>
+                </div>
+                <div class="col-xl-6 col-lg-10 col-md-12">
                     <div class="border">
                         <div class="container m-0">
                             <div class="row d-flex align-items-center">
@@ -95,7 +112,7 @@
                                     <p class="pb-0 mb-0">gillian_johnson</p>
                                 </div>
                                 <div class="col-1">
-                                    <i class="fa-regular fa-heart"></i>
+                                    <h4 class="mb-0 mt-1"><i class="fa-regular fa-heart"></i></h4>
                                 </div>
                             </div>
                             <div class="row">
@@ -108,11 +125,10 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-3"></div>
+                <div class="col-xl-3"></div>
             </div>
-            <div class="row mt-5">
-                <div class="col-3"></div>
-                <div class="col-6">
+            <div class="row mt-5 d-flex justify-content-center">
+                <div class="col-xl-6 col-lg-10 col-md-12">
                     <div class="border">
                         <div class="container m-0">
                             <div class="row d-flex align-items-center">
@@ -123,7 +139,7 @@
                                     <p class="mb-0 pb-0">gillian_johnson</p>
                                 </div>
                                 <div class="col-1">
-                                    <i class="fa-regular fa-heart"></i>
+                                    <h4 class="mb-0 mt-1"><i class="fa-regular fa-heart"></i></h4>
                                 </div>
                             </div>
                             <div class="row">
@@ -136,11 +152,9 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-3"></div>
             </div>
-            <div class="row mt-5">
-                <div class="col-3"></div>
-                <div class="col-6">
+            <div class="row mt-5 d-flex justify-content-center">
+                <div class="col-xl-6 col-lg-10 col-md-12">
                     <div class="border">
                         <div class="container m-0">
                             <div class="row d-flex align-items-center">
@@ -151,7 +165,7 @@
                                     <p class="mb-0 pb-0">gillian_johnson</p>
                                 </div>
                                 <div class="col-1">
-                                    <i class="fa-regular fa-heart"></i>
+                                    <h4 class="mb-0 mt-1"><i class="fa-regular fa-heart"></i></h4>
                                 </div>
                             </div>
                             <div class="row">
@@ -164,7 +178,16 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-3"></div>
+            </div>
+        </div>
+        <div class="container mt-5">
+            <div class="row">
+                <div class="col-12 d-flex justify-content-center align-items-center flex-column">
+                    <a href="#top" class="link-secondary">
+                        <h3 class="ms-2 mb-0 ps-3"><i class="fa-solid fa-caret-up"></i></h3>
+                        <p>To the top</p>
+                    </a>
+                </div>
             </div>
         </div>
     </main>
@@ -184,7 +207,8 @@
                 </ul>
             </div>
         </nav>
-        <p class="d-flex justify-content-center">Copyright</p>
+        <p class="d-flex justify-content-center m-0 p-3">Copyright</p>
     </footer>
+    <script defer src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
 </body>
 </html>
