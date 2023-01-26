@@ -19,4 +19,17 @@ footer, header {
   background-color: #cddec5;
 }
 
+@media (max-width: 800px) {
+  .profile-on-md {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+  .hidden-mobile {
+    display: none;
+  }
+}
+
 /*# sourceMappingURL=css.map */

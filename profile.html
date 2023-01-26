@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Profile | HomeInspo</title>
+    <meta name="description=" content="Your profile on HomeInspo">
+    <title>gillian_johnson | HomeInspo</title>
     <link rel="stylesheet" href="dist/css">
     <script src="https://kit.fontawesome.com/14580da1e1.js" crossorigin="anonymous"></script>
 </head>
@@ -55,32 +56,32 @@
                 </div>
                 <div class="col-6 d-flex justify-content-end">
                     <form class="d-flex align-items-center">
-                        <input type="text" id="search" name="search" placeholder="Search" class="form-control me-2">
+                        <input type="text" id="search" name="search" placeholder="Search" class="form-control me-2 hidden-mobile">
                         <label for="search"><button class="btn btn-primary"><i class="fa-solid fa-magnifying-glass"></button></i></label>
                     </form>
                 </div>
             </div>
         </div>
         <div class="container mt-5">
-            <div class="row">
-                <div class="col-3">
+            <div class="row profile-on-md">
+                <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 mt-2">
                     <img src="images/gillian.jpg" alt="Profile picture of gillian_johnson" class="img-fluid rounded">
                 </div>
-                <div class="col-6">
+                <div class="col-xl-6 col-lg-6 col-md-4 col-sm-6">
                     <div>
-                        <h3>gillian_johnson</h3></div>
+                        <h3 class="mt-2">gillian_johnson</h3></div>
                     <div>
                         <p class="m-0">Occupation: Interior designer</p>
                         <p class="m-0">City: Los Angeles, California</p>
                         <p class="m-0">Hometown: Houston, Texas</p>
                     </div>
                     <div class="mt-5">
-                        <p>Bio: Bio: A traveling interiour designer, always looking for inspiration.</p>
+                        <p>Bio: A traveling interiour designer, always looking for inspiration.</p>
                     </div>
                 </div>
-                <div class="col-3">
+                <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6">
                     <div>
-                        <h3>Friends</h3>
+                        <h3 class="mt-2">Friends</h3>
                     </div>
                     <div>
                         <img src="images/peter.jpg" alt="Username: peter_plant" class="w-25 m-1 rounded">
@@ -89,19 +90,48 @@
                         <img src="images/peter.jpg" alt="Username: peter_plant" class="w-25 m-1 rounded">
                         <img src="images/peter.jpg" alt="Username: peter_plant" class="w-25 m-1 rounded">
                         <img src="images/peter.jpg" alt="Username: peter_plant" class="w-25 m-1 rounded">
-                        <button class="btn btn-primary m-1">View all</button>
+                        <div class="d-flex justify-content-center">
+                            <button class="btn btn-primary m-1">View all</button>
+                        </div>
+                        
                     </div>
                 </div>
             </div>
-            <div class="row mt-5 d-flex justify-content-center">
-                <div class="col-xl-3">
-                    <form class=" d-flex flex-column align-items-center">
-                        <label for="caption" class="mt-3">Write on gillian_johnson's wall</label>
-                        <textarea name="caption" id="caption" rows="4" class="form-control"></textarea>
-                        <button class="btn btn-primary mt-3 w-25">Post</button>
-                    </form>
+            <div class="row">
+                <div class="col-12 d-flex justify-content-center">
+                    <a class="btn btn-primary mt-5" href="#posts">Gillian's posts</a>
                 </div>
-                <div class="col-xl-6 col-lg-10 col-md-12">
+            </div>
+            <div class="row mt-5 d-flex justify-content-center">
+                <div class="col-xl-3 col-lg-3  mt-5 pt-5">
+                    <div>
+                        <form class=" d-flex flex-column align-items-center">
+                            <label for="caption" class="mt-3">Write on gillian_johnson's wall</label>
+                            <textarea name="caption" id="caption" rows="4" class="form-control"></textarea>
+                            <button class="btn btn-primary mt-3 w-50">Comment</button>
+                        </form>
+                    </div>
+                    <h3 class="mt-4">Comments</h3>
+                    <div class="container border rounded my-3">
+                        <div class="row d-flex align-items-center border-bottom">
+                            <div class="col-2 m-0 p-0">
+                                <img src="images/peter.jpg" alt="peter_plant" class="img-fluid">
+                            </div>
+                            <div class="col-8 d-flex align-content-center">
+                                <p class="m-0 p-0">peter_plant</p>
+                            </div>
+                            <div class="col-2 d-flex justify-content-center">
+                                <a href="#" class="nav-link mb-2">...</a>
+                            </div>
+                        </div>
+                        <div class="row mt-1">
+                            <p>Wow, so many great posts. Really love your style.</p>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col-xl-6 col-lg-9 col-md-12 mt-5 pt-5" id="posts">
+                    <h3 class="mt-2">Posts</h3>
                     <div class="border">
                         <div class="container m-0">
                             <div class="row d-flex align-items-center">
@@ -128,7 +158,10 @@
                 <div class="col-xl-3"></div>
             </div>
             <div class="row mt-5 d-flex justify-content-center">
-                <div class="col-xl-6 col-lg-10 col-md-12">
+                <div class="col-3">
+
+                </div>
+                <div class="col-xl-6 col-lg-9 col-md-12">
                     <div class="border">
                         <div class="container m-0">
                             <div class="row d-flex align-items-center">
@@ -154,7 +187,10 @@
                 </div>
             </div>
             <div class="row mt-5 d-flex justify-content-center">
-                <div class="col-xl-6 col-lg-10 col-md-12">
+                <div class="col-3">
+
+                </div>
+                <div class="col-xl-6 col-lg-9 col-md-12">
                     <div class="border">
                         <div class="container m-0">
                             <div class="row d-flex align-items-center">
