@@ -12,7 +12,7 @@ This assignment was to build a social media website containing a home page, a pr
 
 ## Getting started
 ### Installing
-1. Clone the repo:
+1. Clone the repo: 
 
 ``` 
 git clone git@github.com:margretheby/semester-project-1.git
